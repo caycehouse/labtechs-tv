@@ -11,6 +11,7 @@ module.exports = {
             secondary: {
               main: '#ffc107',
             },
+            type: 'dark',
           },
           typography: {
             // Use the system font instead of the default Roboto font.
