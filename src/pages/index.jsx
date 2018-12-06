@@ -1,12 +1,15 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 import Layout from '../components/Layout';
+import UnresolvedTickets from '../components/UnresolvedTickets';
 
 export default () => (
   <Layout>
-    <Typography variant="h1" gutterBottom align="center">
-      Welcome to the Index page.
-    </Typography>
+    <Grid container>
+      <Grid item xs>
+        <UnresolvedTickets />
+      </Grid>
+    </Grid>
   </Layout>
 );
