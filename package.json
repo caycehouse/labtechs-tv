@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^3.6.1",
+    "@wapps/gatsby-plugin-material-ui": "^1.1.0",
     "gatsby": "^2.0.33",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",

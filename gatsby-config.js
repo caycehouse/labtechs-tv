@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [`gatsby-plugin-eslint`],
+  plugins: [`@wapps/gatsby-plugin-material-ui`, `gatsby-plugin-eslint`],
 };
