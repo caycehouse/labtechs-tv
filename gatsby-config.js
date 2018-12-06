@@ -12,6 +12,9 @@ module.exports = {
               main: '#ffc107',
             },
           },
+          typography: {
+            useNextVariants: true,
+          },
         },
       },
     },

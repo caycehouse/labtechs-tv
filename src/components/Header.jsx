@@ -43,9 +43,11 @@ const Header = props => {
   );
 };
 
-/* eslint-disable */
 Header.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.shape({
+    grow: PropTypes.string.isRequired,
+    inline: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(Header);
