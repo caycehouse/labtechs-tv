@@ -24,9 +24,19 @@ const Header = props => {
         </Typography>
         <Typography variant="h6" color="inherit" className={classes.inline}>
           Crafted by
-          <Typography variant="h6" color="secondary" className={classes.inline}>
-            &nbsp;Cayce House
-          </Typography>
+          <a
+            href="https://caycehouse.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Typography
+              variant="h6"
+              color="secondary"
+              className={classes.inline}
+            >
+              &nbsp;Cayce House
+            </Typography>
+          </a>
         </Typography>
       </Toolbar>
     </AppBar>
