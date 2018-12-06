@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
@@ -11,6 +12,9 @@ const styles = {
   },
   inline: {
     display: 'inline',
+  },
+  noTextTransform: {
+    textTransform: 'none',
   },
 };
 
@@ -22,22 +26,20 @@ const Header = props => {
         <Typography variant="h6" color="secondary" className={classes.grow}>
           Labtechs TV
         </Typography>
-        <Typography variant="h6" color="inherit" className={classes.inline}>
-          Crafted by
-          <a
-            href="https://caycehouse.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Typography
-              variant="h6"
-              color="secondary"
-              className={classes.inline}
-            >
-              &nbsp;Cayce House
-            </Typography>
-          </a>
-        </Typography>
+        <Button
+          size="large"
+          color="secondary"
+          className={classes.noTextTransform}
+          onClick={() => window.open('https://caycehouse.com')}
+          to="https://caycehouse.com"
+        >
+          <Typography variant="h6" color="default" className={classes.inline}>
+            Crafted by
+          </Typography>
+          <Typography variant="h6" color="secondary" className={classes.inline}>
+            &nbsp;Cayce House
+          </Typography>
+        </Button>
       </Toolbar>
     </AppBar>
   );
