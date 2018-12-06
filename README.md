@@ -1,12 +1,9 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# labtechs-tv
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+[![Travis (.com)](https://img.shield.io/travis/com/caycehouse/labtechs-tv.svg)](https://travis-ci.com/caycehouse/labtechs-tv)
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
+📺 The Labtechs TV web application
 
 ## Running in development
+
 `gatsby develop`
