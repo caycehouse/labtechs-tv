@@ -1,4 +1,8 @@
 import React from 'react';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 
 class UnresolvedTickets extends React.Component {
@@ -6,7 +10,7 @@ class UnresolvedTickets extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
+      tickets: [],
       timer: null,
     };
   }
@@ -22,15 +26,36 @@ class UnresolvedTickets extends React.Component {
   }
 
   fetchNewData() {
-    this.setState(prevState => ({ count: prevState.count + 1 }));
+    // TODO: Write this
+    const { tickets } = this.state;
+    console.log(tickets);
   }
 
   render() {
-    const { count } = this.state;
+    const rows = [];
+
+    const { tickets } = this.state;
     return (
-      <Typography variant="h6" color="secondary">
-        Unresolved Tickets ({count})
-      </Typography>
+      <React.Fragment>
+        <Typography variant="h6" color="secondary">
+          Unresolved Tickets ({tickets.length})
+        </Typography>
+        <Table>
+          <TableBody>
+            {rows.map(row => (
+              <TableRow key={row.id}>
+                <TableCell component="th" scope="row">
+                  {row.name}
+                </TableCell>
+                <TableCell numeric>{row.calories}</TableCell>
+                <TableCell numeric>{row.fat}</TableCell>
+                <TableCell numeric>{row.carbs}</TableCell>
+                <TableCell numeric>{row.protein}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </React.Fragment>
     );
   }
 }
