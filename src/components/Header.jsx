@@ -24,7 +24,7 @@ const Header = props => {
     <AppBar position="static" color="primary">
       <Toolbar>
         <Typography variant="h6" color="secondary" className={classes.grow}>
-          Labtechs TV
+          {process.env.APP_NAME}
         </Typography>
         <Button
           size="large"
